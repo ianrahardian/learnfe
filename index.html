@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritma - BI</title>
+    <!-- source: cdnjs.com-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>
+        BI Social Media Analytics
+    </h1>
+    <h2 style="color:blue">
+        Public Sentiment Analysis
+    </h2>
+    <h3>Lalalala</h3>
+    <h6>Source: bi.go.id</h6>
+
+    <hr>
+
+    <img src="https://www.bi.go.id/id/publikasi/ruang-media/news-release/PublishingImages/Pages/sp_2421922/_w/sp_2421922_2_jpg.jpg";
+        alt= "yayaya">
+    <ul>
+        <li>Indonesia interest rate hike for second year in a row</li>
+        <li>CPI being monitored closely</li>
+        <li>Another 2.5% hike</li>
+        <li>Indonesia in an effort</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque similique quae accusantium perferendis provident sapiente eaque,
+        suscipit, officia cumque itaque omnis possimus cum repellat. Sed optio deleniti illum reiciendis facilis!
+    </p>
+    <h3>Interest Rate Chart</h3>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+        const labels = [
+          'January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+        ];
+      
+        const data = {
+          labels: labels,
+          datasets: [{
+            label: 'Social Media Comments Count',
+            backgroundColor: 'rgb(0, 0, 0)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45],
+          }]
+        };
+      
+        const config = {
+          type: 'line',
+          data: data,
+          options: {}
+        };
+    </script>
+
+    <script>
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    </script>
+</body>
+</html>
